@@ -81,19 +81,23 @@
 			<window name="dragAndDropItemStack" />
 		</window_group>
 		
-<!-- <<< SMX v162b7 r01 START - BY SIRILLION >>> -->
+<!-- <<< SMX v163b1e r01 START - BY SIRILLION >>> -->
 		
 		<window_group name="compass" actionSet="false">
-			<window name="SMXCompass1" anchor="CenterTop" /> 				<!-- SMX UI -->
-<!--		<window name="SMXCompass2VALMOD" anchor="CenterTop" /> -->		<!-- VALMOD UI -->
-<!--		<window name="windowCompass" /> -->								<!-- STANDARD UI -->
-			<window name="SMXDayTimeFrame1" anchor="LeftTop" />				<!-- SMX & VALMOD UI -->
-			<window name="SMX" anchor="RightTop" />							<!-- SMX UI -->
-			<window name="SMXLevelXPUF1" anchor="LeftTop" />				<!-- SMX UI -->
-<!--		<window name="SMXLevelXPUF2VALMOD" anchor="LeftTop" /> -->		<!-- VALMOD UI -->
+			<window name="SMXCompass1SMX" anchor="CenterTop" />				<!-- SMX UI -->					<!-- Disable this if you want to use the VALMOD or SIRMOD designs -->
+<!--		<window name="SMXCompass2VALMOD" anchor="CenterTop" /> -->		<!-- VALMOD UI -->				<!-- Disable this if you want to use the SMX or SIRMOD designs -->
+<!--		<window name="SMXCompass3SIRMOD" anchor="CenterTop" /> --> 		<!-- SIRMOD UI -->				<!-- Disable this if you want to use the SMX or VALMOD designs -->
+<!--		<window name="windowCompass" /> -->								<!-- STANDARD UI -->			<!-- Enable this for 7DTD standard compass. Disable all of the above! -->
+			<window name="SMXDayTimeFrame1SMX" anchor="LeftTop" />			<!-- SMX & VALMOD UI -->		<!-- Disable this if you want to use the SIRMOD design -->
+<!--		<window name="SMXDayTimeFrame3SIRMOD" /> -->					<!-- SIRMOD UI -->				<!-- Disable this if you want to use SMX or VALMOD designs -->
+			<window name="SMX" anchor="RightTop" />							<!-- SMX UI -->					<!-- Disable this if you don't want the SMX - Enhanced logo -->
+<!--		<window name="VALMOD" anchor="RightTop" /> -->					<!-- VALMOD UI -->				<!-- Disable this if you don't want the VALMOD fedora -->
+			<window name="SMXLevelXPUF1SMX" anchor="LeftTop" /> 			<!-- SMX UI -->					<!-- Disable this if you want to use the VALMOD or SIRMOD designs -->
+<!--		<window name="SMXLevelXPUF2VALMOD" anchor="LeftTop" /> -->		<!-- VALMOD UI -->				<!-- Disable this if you want to use the SMX or SIRMOD designs -->
+<!--		<window name="SMXLevelXPUF3SIRMOD" anchor="LeftTop" /> -->		<!-- SIRMOD UI -->				<!-- Disable this if you want to use the SMX or VALMOD designs -->
 		</window_group>
 		
-<!-- <<< SMX v162b7 r01 END - BY SIRILLION >>> -->
+<!-- <<< SMX v163b1e r01 END - BY SIRILLION >>> -->
 		
 		<window_group name="toolTip" actionSet="false">
 			<window name="toolTip" />
@@ -112,31 +116,39 @@
 			<window name="windowTimer"/>
 		</window_group>
 		
-<!-- <<< SMX v162b7 r01 START - BY SIRILLION >>> -->
+<!-- <<< SMX v163b1e r01 START - BY SIRILLION >>> -->
 		
 		<window_group name="toolbelt" actionSet="false">
-			<window name="SMXToolbelt1" anchor="CenterBottom" />			<!-- SMX UI -->
-<!--		<window name="SMXToolbelt2VALMOD" anchor="CenterBottom" /> -->	<!-- VALMOD UI -->		<!-- MUST also uncomment/comment the SMXToolbeltNumbersVALMOD -->
-<!--		<window name="SMXToolbeltNumbersVALMOD" /> -->					<!-- VALMOD UI -->		<!-- MUST also uncomment/comment the SMXToolbelt2VALMOD -->
-<!--		<window name="windowToolbelt" anchor="CenterBottom" /> -->		<!-- STANDARD UI -->
-			<window name="SMXUnitFrame1" anchor="LeftBottom" /> 			<!-- SMX UI -->			<!-- MUST also uncomment/comment the SMXTempFrameUF1 -->
-<!--		<window name="SMXUnitFrame2VALMOD" anchor="LeftBottom" /> -->	<!-- VALMOD UI -->		<!-- MUST also uncomment/comment the SMXTempFrameUF2VALMOD -->
-<!--		<window name="ZombieKillTrackerVALMOD" /> -->					<!-- VALMOD UI -->
-<!--		<window name="SMXBuffFrame1" anchor="LeftBottom" /> -->			<!-- SMX UI -->			<!-- Standard Buff Frames - BIG -->
-<!-- 		<window name="SMXBuffFrame2" anchor="LeftBottom" />	-->			<!-- SMX UI -->			<!-- Standard Buff Frames - SMALL -->
-<!--		<window name="SMXBuffFrame3" anchor="LeftBottom" />	-->			<!-- SMX UI -->			<!-- Enhanced Buff Frames - BIG -->
-			<window name="SMXBuffFrame4" anchor="LeftBottom" />				<!-- SMX UI -->			<!-- Enhanced Buff Frames - SMALL -->
-<!--		<window name="SMXBuffFrame5VALMOD" anchor="LeftBottom" /> -->	<!-- VALMOD UI -->
-<!--		<window name="HUDLeftStatBars" anchor="LeftBottom" /> -->		<!-- STANDARD UI -->
-			<window name="SMXHudOther" anchor="RightBottom" />				<!-- SMX & VALMOD UI -->
-<!--		<window name="HUDRightStatBars" anchor="RightBottom" /> -->		<!-- STANDARD UI -->
-			<window name="SMXTempFrameUF1" /> 								<!-- SMX UI -->			<!-- MUST also uncomment/comment the SMXUnitFrame1 -->
-<!--		<window name="SMXTempFrameUF2VALMOD" /> -->						<!-- VALMOD UI -->		<!-- MUST also uncomment/comment the SMXUnitFrame2VALMOD -->
-<!--		<window name="windowQuestTracker" anchor="RightTop" /> -->		<!-- STANDARD UI -->
-			<window name="SMXQuestTracker" anchor="RightTop" />				<!-- SMX & VALMOD UI -->
+			<window name="SMXToolbelt1SMX" anchor="CenterBottom" /> 		<!-- SMX UI -->					<!-- Disable this if you want to use the VALMOD or SIRMOD designs -->
+<!--		<window name="SMXToolbelt2VALMOD" anchor="CenterBottom" /> -->	<!-- VALMOD UI -->				<!-- Disable this if you want to use the SMX or SIRMOD designs -->
+<!--		<window name="SMXToolbeltNumbersVALMOD" /> -->					<!-- VALMOD UI -->				<!-- Disable this if you want to use the SMX or SIRMOD designs -->
+<!--		<window name="SMXToolbelt3SIRMOD" anchor="CenterBottom" /> -->	<!-- SIRMOD UI -->				<!-- Disable this if you want to use the SMX or VALMOD designs -->
+<!--		<window name="windowToolbelt" anchor="CenterBottom" /> -->		<!-- STANDARD UI -->			<!-- Enable this for 7DTD standard toolbelt. Disable all of the above! -->
+<!--		<window name="SMXUnitFrame1SMX" anchor="LeftBottom" /> -->		<!-- SMX UI -->					<!-- Disable this if you want to use the VALMOD, SIRMOD or SMX2 designs -->
+<!--		<window name="SMXUnitFrame2VALMOD" anchor="LeftBottom" /> -->	<!-- VALMOD UI -->				<!-- Disable this if you want to use the SIRMOD, SMX or SMX2 designs -->
+<!--		<window name="SMXUnitFrame3SIRMOD" anchor="LeftBottom" /> -->	<!-- SIRMOD UI -->				<!-- Disable this if you want to use the VALMOD, SMX or SMX2 designs -->
+			<window name="SMXUnitFrame4SMX2" anchor="LeftBottom" /> 		<!-- SMX2 UI -->				<!-- Disable this if you want to use the VALMOD, SIRMOD or SMX designs -->
+<!--		<window name="ZombieKillTrackerVALMOD" /> -->					<!-- VALMOD UI -->				<!-- Disable this if you want to use the SIRMOD design -->
+<!--		<window name="ZombieKillTrackerSIRMOD" /> -->					<!-- SIRMOD UI -->				<!-- Disable this if you want to use the VALMOD design -->
+<!--		<window name="SMXBuffFrame1" anchor="LeftBottom" /> -->			<!-- SMX UI -->					<!-- Standard Buff Frames - BIG - Disable this is you want to use any other design -->
+<!-- 		<window name="SMXBuffFrame2" anchor="LeftBottom" />	-->			<!-- SMX UI -->					<!-- Standard Buff Frames - SMALL - Disable this is you want to use any other design -->
+<!--		<window name="SMXBuffFrame3" anchor="LeftBottom" />	-->			<!-- SMX UI -->					<!-- Enhanced Buff Frames - BIG - Disable this is you want to use any other design -->
+<!--		<window name="SMXBuffFrame4" anchor="LeftBottom" /> -->			<!-- SMX UI -->					<!-- Enhanced Buff Frames - SMALL - Disable this is you want to use any other design -->
+<!--		<window name="SMXBuffFrame5VALMOD" anchor="LeftBottom" /> -->	<!-- VALMOD UI -->				<!-- Disable this if you want to use SMX, SMX2 or SIRMOD designs -->
+<!--		<window name="SMXBuffFrame6SIRMOD" anchor="LeftBottom" /> -->	<!-- SIRMOD UI -->				<!-- Disable this if you want to use SMX, SMX2 or VALMOD designs -->
+			<window name="SMXBuffFrame7SMX2" anchor="LeftBottom" />			<!-- SMX2 UI -->				<!-- Disable this if you want to use SMX, SIRMOD or VALMOD designs -->
+<!--		<window name="HUDLeftStatBars" anchor="LeftBottom" /> -->		<!-- STANDARD UI -->			<!-- Enable this for 7DTD standard UNITFRAMES and BUFFS. Disable all of the above!(Between this and the STANDARD UI frame above) -->
+			<window name="SMXHudOther" anchor="RightBottom" /> 				<!-- SMX & VALMOD UI -->		<!-- Disable this if you want to use the SIRMOD design -->
+<!--		<window name="HUDRightStatBars" anchor="RightBottom" /> -->		<!-- STANDARD & SIRMOD UI -->	<!-- Enable this for 7DTD standard AMMO, PICKUP and MINIBIKE. Disable the one above! -->
+<!--		<window name="SMXTempFrameUF1SMX" /> -->						<!-- SMX UI -->					<!-- Disable this if you want to use the SMX2, SIRMOD or VALMOD designs -->
+<!--		<window name="SMXTempFrameUF2VALMOD" /> -->						<!-- VALMOD UI -->				<!-- Disable this if you want to use the SMX, SMX2 or SIRMOD designs -->
+			<window name="SMXTempFrameUF3SMX2" /> 							<!-- SMX2 UI -->				<!-- Disable this if you want to use the SMX, SIRMOD or VALMOD designs -->
+			<window name="SMXQuestTracker" anchor="RightTop" /> 			<!-- SMX & VALMOD UI -->		<!-- Disable this if you want to use the SIRMOD design -->
+<!--		<window name="SMXQuestTracker3SIRMOD" anchor="RightTop" /> -->	<!-- SIRMOD UI -->				<!-- Disable this if you want to use the SMX or VALMOD designs -->
+<!--		<window name="windowQuestTracker" anchor="RightTop" /> -->		<!-- STANDARD UI -->			<!-- Enable this for 7DTD standard QUEST TRACKER. Disable all of the above!(Between this and the STANDARD UI frame above) -->
 		</window_group>
 		
-<!-- <<< SMX v162b7 r01 END - BY SIRILLION >>> -->		
+<!-- <<< SMX v163b1e r01 END - BY SIRILLION >>> -->		
 		
 		<window_group name="vehicle" controller="XUiC_VehicleWindowGroup">
 			<window name="windowVehicle"/>
@@ -256,14 +268,14 @@
 			<window name="spawnMenu" />
 		</window_group>
 		
-<!-- <<< SMX v162b7 r01 START - BY SIRILLION >>> -->		
+<!-- <<< SMX v163b1e r01 START - BY SIRILLION >>> -->		
 		
 		<window_group name="ingameMenu">
 <!--		<window name="ingameMenu" /> -->
 			<window name="SMXingameMenu" />
 		</window_group>
 		
-<!-- <<< SMX v162b7 r01 END - BY SIRILLION >>> -->
+<!-- <<< SMX v163b1e r01 END - BY SIRILLION >>> -->
 		
 		<window_group name="woPropsSleeperVolume">
 			<window name="woPropsSleeperVolume" />

@@ -1,6 +1,6 @@
 <windows>
 
-<!-- <<< SMX v162b7 r01 START - BY SIRILLION >>> -->
+<!-- <<< SMX v163b1e r01 START - BY SIRILLION >>> -->
 
 <!-- >>> LOGO & SERVER INFORMATION >>> -->
 
@@ -9,14 +9,14 @@
 		<!-- EDIT THE TEXTURE PART TO REMOVE THE SMX "LOGO" OR INSERT YOUR OWN LOGO IF YOU WISH. TO AVOID ISSUES, STICK TO THE SIZE. -->
 		<!-- EDIT THE TEXT PART OF THE LABEL SECTION TO SET A CUSTOM MESSAGE FOR YOUR DEDICATED SERVER - STANDARD COLOR IS GREEN, THIS CAN BE CHANGED IN THE COLOR PART. DON'T OVER-DO IT! -->
 
-		<texture name="SMX" depth="0" size="250,27" texture="@file:Mods\SMX\Textures\Misc\smxenhancedlogo.png" material="Materials/Transparent Colored" pos="-320,-6" /> <!-- Online Equivalent: http://i63.tinypic.com/9pw8oz.jpg -->
+		<texture name="SMX" depth="0" size="250,27" texture="@file:Mods\SMX\Textures\Misc\smxenhancedlogo.png" material="Materials/Transparent Colored" pos="-320,-6" />
 		<label name="SMXServerInfo1" depth="0" size="250,27" text="" font_size="20" effect="outline" color="[green]" justify="center" pos="-610,-8" overflow="resizeheight" />
 
 	</window>
 	
 	<window name="VALMOD">
 
-		<texture name="Valmod" depth="0" size="53,35" texture="@file:Mods\SMX\Textures\Misc\valmodhat.png" material="Materials/Transparent Colored" pos="-160,-6" /> <!-- Online Mac: @http://i.imgur.com/41Ldkxq.png -->
+		<texture name="Valmod" depth="0" size="53,35" texture="@file:Mods\SMX\Textures\Misc\valmodhat.png" material="Materials/Transparent Colored" pos="-160,-6" />
 <!--	<label name="SMX" depth="0" size="53,35" text="SMX UI" font_size="20" effect="outline" color="[white]" justify="center" pos="-220,-15" overflow="resizeheight" /> --> <!-- REMOVED BY: Sirillion -->
 		<!-- Valmod Version -->
 		<label name="SMXServerInfo1" depth="0" size="53,35" text="VMO V4.75" font_size="20" effect="outline" color="[white]" justify="center" pos="-160,-15" overflow="resizeheight" />
@@ -27,31 +27,31 @@
 
 <!-- >>> UNIT FRAMES >>> -->
 	
-	<window name="SMXUnitFrame1" style="SMXUnitFrameWindow">
+	<window name="SMXUnitFrame1SMX" style="SMXUnitFrameWindow">
 
 		<grid name="SMXHSFrame" pos="0,150" rows="2" cols="1" width="240" cell_width="240" cell_height="35" repeat_content="false" side="left">
 			<rect width="240" height="35" controller="HUDStatBar" stat_type="Health" visible="{statvisible}">
-				<texture name="SMXHealthBarBG" depth="1" size="240,54" texture="@file:Mods\SMX\Textures\UnitFrames\healthbarempty.png" material="Materials/Transparent Colored" pos="0,-55" /> <!-- Online Equivalent: http://i63.tinypic.com/nq5ml5.jpg -->
-				<sprite name="BarContent" depth="2" height="25" width="220" atlas="itemiconatlas" sprite="smxuf1health" type="filled" fill="0" pos="8,-65" />
+				<texture name="SMXHealthBarBG" depth="1" size="240,54" texture="@file:Mods\SMX\Textures\UnitFrames\healthbarempty.png" material="Materials/Transparent Colored" pos="0,-55" />
+				<sprite name="BarContent" depth="2" height="25" width="220" atlas="itemiconatlas" sprite="uf1healthbar" type="filled" fill="0" pos="8,-65" />
 				<label depth="6" name="TextContent" pos="0,-62" font_size="32" effect="outline" color="[white]" justify="center" pivot="topleft" text="{statcurrentwithmax}" />
 			</rect>
 
 			<rect width="240" height="35" controller="HUDStatBar" stat_type="Stamina" visible="{statvisible}">
-				<texture name="SMXStaminaBarBG" depth="1" size="240,54" texture="@file:Mods\SMX\Textures\UnitFrames\staminabarempty.png" material="Materials/Transparent Colored" pos="0,-55" /> <!-- Online Equivalent: http://i63.tinypic.com/rro0ut.jpg -->
-				<sprite name="BarContent" depth="2" size="220,25" atlas="itemiconatlas" sprite="smxuf1stamina" type="filled" fill="0" pos="8,-67" />
+				<texture name="SMXStaminaBarBG" depth="1" size="240,54" texture="@file:Mods\SMX\Textures\UnitFrames\staminabarempty.png" material="Materials/Transparent Colored" pos="0,-55" />
+				<sprite name="BarContent" depth="2" size="220,25" atlas="itemiconatlas" sprite="uf1staminabar" type="filled" fill="0" pos="8,-67" />
 				<label depth="6" name="TextContent" pos="0,-64" font_size="32" effect="outline" color="[white]" justify="center" pivot="topleft" text="{statcurrentwithmax}" />
 			</rect>
 		</grid>
 
 		<grid name="SMXFWFrame" pos="-2,70" rows="1" cols="2" width="118" cell_width="118" cell_height="35" repeat_content="false" side="left">
 			<rect width="118" height="35" controller="HUDStatBar" stat_type="Food" visible="{statvisible}">
-				<texture name="SMXFoodBarBG" depth="1" size="120,27" texture="@file:Mods\SMX\Textures\UnitFrames\foodwaterempty.png" material="Materials/Transparent Colored" pos="0,-55" /> <!-- Online Equivalent: http://i63.tinypic.com/iwm73o.jpg -->
+				<texture name="SMXFoodBarBG" depth="1" size="120,27" texture="@file:Mods\SMX\Textures\UnitFrames\foodwaterempty.png" material="Materials/Transparent Colored" pos="0,-55" />
 				<sprite name="BarContent" depth="2" size="102,-10" color="0,128,0" type="filled" fill="0" pos="10,-75" />
 				<label depth="6" name="TextContent" pos="0,-58" font_size="22" effect="outline" color="[white]" justify="center" pivot="topleft" text="{playerfood} %" controller="PlayerStatsWindow" />
 			</rect>
 
 			<rect width="118" height="35" controller="HUDStatBar" stat_type="Water" visible="{statvisible}">
-				<texture name="SMXWaterBarBG" depth="1" size="120,27" texture="@file:Mods\SMX\Textures\UnitFrames\foodwaterempty.png" material="Materials/Transparent Colored" pos="0,-55" /> <!-- Online Equivalent: http://i63.tinypic.com/iwm73o.jpg -->
+				<texture name="SMXWaterBarBG" depth="1" size="120,27" texture="@file:Mods\SMX\Textures\UnitFrames\foodwaterempty.png" material="Materials/Transparent Colored" pos="0,-55" />
 				<sprite name="BarContent" depth="2" size="102,-10" color="0,153,255" type="filled" fill="0" pos="10,-75" />
 				<label depth="6" name="TextContent" pos="0,-58" font_size="22" effect="outline" color="[white]" justify="center" pivot="topleft" text="{playerwater} %" controller="PlayerStatsWindow" />
 			</rect>
@@ -63,23 +63,23 @@
 
 		<grid name="SMXHSFrame" pos="0,145" rows="2" cols="1" width="240" cell_width="240" cell_height="35" repeat_content="false" side="left">
 			<rect width="240" height="35" controller="HUDStatBar" stat_type="Stamina" visible="{statvisible}">
-				<texture name="SMXStaminaBarBG" depth="1" size="240,54" texture="@file:Mods\SMX\Textures\UnitFrames\staminabarempty.png" material="Materials/Transparent Colored" pos="0,-75" /> <!-- Online Mac: @http://i.imgur.com/B2H7fAN.png -->
-				<sprite name="BarContent" depth="2" height="15" width="220" atlas="itemiconatlas" sprite="vmoufastamina" type="filled" fill="0" pos="8,-86" />
+				<texture name="SMXStaminaBarBG" depth="1" size="240,54" texture="@file:Mods\SMX\Textures\UnitFrames\staminabarempty.png" material="Materials/Transparent Colored" pos="0,-75" />
+				<sprite name="BarContent" depth="2" height="15" width="220" atlas="itemiconatlas" sprite="uf2staminabar" type="filled" fill="0" pos="8,-86" />
 		<!-- Uncomment this if you want percentages to show
 				<label depth="6" name="TextContent" pos="0,-83" font_size="20" effect="outline" color="[white]" justify="center" pivot="topleft" text="{statcurrent}" />
 				-->
 			</rect>
 
 			<rect width="240" height="35" controller="HUDStatBar" stat_type="Health" visible="{statvisible}">
-				<texture name="SMXHealthBarBG" depth="1" size="240,60" texture="@file:Mods\SMX\Textures\UnitFrames\healthbarempty.png" material="Materials/Transparent Colored" pos="0,-55" /> <!-- Online Mac: @http://i.imgur.com/ByY3tLq.png -->
-				<sprite name="BarContent" depth="2" size="220,30" atlas="itemiconatlas" sprite="vmoufahealth" type="filled" fill="0" pos="8,-67" />
+				<texture name="SMXHealthBarBG" depth="1" size="240,60" texture="@file:Mods\SMX\Textures\UnitFrames\healthbarempty.png" material="Materials/Transparent Colored" pos="0,-55" />
+				<sprite name="BarContent" depth="2" size="220,30" atlas="itemiconatlas" sprite="uf2healthbar" type="filled" fill="0" pos="8,-67" />
 				<label depth="6" name="TextContent" pos="0,-66" font_size="32" effect="outline" color="[white]" justify="center" pivot="topleft" text="{statcurrent}" />
 			</rect>
 		</grid>
 
 		<grid name="SMXFWFrame" pos="-2,70" rows="1" cols="2" width="118" cell_width="118" cell_height="35" repeat_content="false" side="left">
 			<rect width="118" height="35" controller="HUDStatBar" stat_type="Food" visible="{statvisible}">
-				<texture name="SMXFoodBarBG" depth="1" size="120,27" texture="@file:Mods\SMX\Textures\UnitFrames\foodwaterempty.png" material="Materials/Transparent Colored" pos="0,-55" /> <!-- Online Mac: @http://i.imgur.com/zhj0odw.png-->
+				<texture name="SMXFoodBarBG" depth="1" size="120,27" texture="@file:Mods\SMX\Textures\UnitFrames\foodwaterempty.png" material="Materials/Transparent Colored" pos="0,-55" />
 				<sprite name="BarContent" depth="2" size="102,-10" color="64,214,109,200" type="filled" fill="0" pos="10,-75" />
 		
 				<label depth="6" name="TextContent" pos="0,-58" font_size="22" effect="outline" color="[white]" justify="center" pivot="topleft" text="{playerfood} %" controller="PlayerStatsWindow" />
@@ -87,7 +87,7 @@
 			</rect>
 
 			<rect width="118" height="35" controller="HUDStatBar" stat_type="Water" visible="{statvisible}">
-				<texture name="SMXWaterBarBG" depth="1" size="120,27" texture="@file:Mods\SMX\Textures\UnitFrames\foodwaterempty.png" material="Materials/Transparent Colored" pos="0,-55" /> <!-- Online Mac: @http://i.imgur.com/zhj0odw.png-->
+				<texture name="SMXWaterBarBG" depth="1" size="120,27" texture="@file:Mods\SMX\Textures\UnitFrames\foodwaterempty.png" material="Materials/Transparent Colored" pos="0,-55" />
 				<sprite name="BarContent" depth="2" size="102,-10" color="64,177,214,200" type="filled" fill="0" pos="10,-75" />
 		
 				<label depth="6" name="TextContent" pos="0,-58" font_size="22" effect="outline" color="[white]" justify="center" pivot="topleft" text="{playerwater} %" controller="PlayerStatsWindow" />
@@ -131,6 +131,42 @@
 			</rect>
 		</grid>
 	</window>
+
+	<window name="SMXUnitFrame4SMX2" style="SMXUnitFrameWindow">
+
+		<grid name="SMXFWFrame" pos="-40,56" rows="2" cols="1" width="70" cell_width="70" cell_height="70" repeat_content="false" side="left">
+
+			<rect width="70" height="70" controller="HUDStatBar" stat_type="Water" visible="{statvisible}">
+				<sprite name="SMXHealthBarBG" depth="3" atlas="itemiconatlas" sprite="uf4thirstbg" type="sliced" pos="99,75" size="60,50" rotation="90" />
+				<sprite name="BarContent" depth="4" atlas="itemiconatlas" sprite="uf4thirstbar" type="filled" fill="0" pos="100,75" size="53,10" rotation="90" />
+				<label depth="6" name="TextContent" pos="80,65" font_size="18" effect="outline" color="[white]" justify="center" pivot="topleft" text="{playerwater} %" controller="PlayerStatsWindow" rotation="90"/>
+			</rect>
+
+			<rect width="70" height="70" controller="HUDStatBar" stat_type="Food" visible="{statvisible}">
+				<sprite name="SMXHealthBarBG" depth="3" atlas="itemiconatlas" sprite="uf4hungerbg" type="sliced" pos="99,80" size="60,50" rotation="90" />
+				<sprite name="BarContent" depth="4" atlas="itemiconatlas" sprite="uf4hungerbar" type="filled" fill="0" pos="100,80" size="53,10" rotation="90" />
+				<label depth="6" name="TextContent" pos="80,70" font_size="18" effect="outline" color="[white]" justify="center" pivot="topleft" text="{playerfood} %" controller="PlayerStatsWindow" rotation="90"/>
+			</rect>
+
+		</grid>
+
+		<grid name="SMXHSFrame" pos="-20,25" rows="1" cols="2" width="70" cell_width="70" cell_height="200" repeat_content="false" side="left">
+			
+			<rect width="70" height="200" controller="HUDStatBar" stat_type="Health" visible="{statvisible}">
+				<sprite name="SMXHealthBarBG" depth="1" atlas="itemiconatlas" sprite="uf4healthbg" type="sliced" pos="100,0" size="193,60" rotation="90" />
+				<sprite name="BarContent" depth="2" atlas="itemiconatlas" sprite="uf4healthbar" type="filled" fill="0" pos="100,0" size="193,60" rotation="90" />
+				<label depth="6" name="TextContent" pos="96,155" font_size="22" effect="outline" color="[white]" justify="center" pivot="topleft" text="{statcurrent}" />
+			</rect>
+		
+			<rect width="70" height="200" controller="HUDStatBar" stat_type="Stamina" visible="{statvisible}">
+				<sprite name="SMXStaminaBarBG" depth="3" atlas="itemiconatlas" sprite="uf4staminabg" type="sliced" pos="57,25" size="150,53" rotation="90" />
+				<sprite name="BarContent" depth="4" atlas="itemiconatlas" sprite="uf4staminabar" type="filled" fill="0" pos="100,30" size="140,10" rotation="90" />
+				<label depth="6" name="TextContent" pos="110,65" font_size="18" effect="outline" color="[white]" justify="center" pivot="topleft" text="{statcurrentwithmax}" rotation="90"/>
+			</rect>
+
+		</grid>
+
+	</window>
 	
 <!-- <<< UNIT FRAMES <<< -->
 
@@ -158,12 +194,12 @@
 	
 <!-- >>> LEVEL & XP BARS >>> -->
 
-	<window name="SMXLevelXPUF1" style="SMXLevelXP.window">
+	<window name="SMXLevelXPUF1SMX" style="SMXLevelXP.window">
 
 		<rect pos="0,0" controller="PlayerStatsWindow">
-			<sprite name="SMXLevelXPBG" pos="12,15" size="120,80" depth="1" atlas="itemiconatlas" sprite="smxxp1bg" />
-			<sprite name="SMXLevelXPFG" pos="17,13" size="110,76" depth="2" atlas="itemiconatlas" sprite="smxxp1fg" globalopacitymod="1.5" />
-			<sprite name="SMXLevelXPBar" pos="25,10" size="93,64" depth="3" atlas="itemiconatlas" sprite="smxxp1bar" color="255,255,255" type="filled" filldirection="radial360" fill="{playerlevelfill}" globalopacitymod="1.5" />
+			<sprite name="SMXLevelXPBG" pos="12,15" size="120,80" depth="1" atlas="itemiconatlas" sprite="uf1xpbg" />
+			<sprite name="SMXLevelXPFG" pos="17,13" size="110,76" depth="2" atlas="itemiconatlas" sprite="uf1xpfg" globalopacitymod="1.5" />
+			<sprite name="SMXLevelXPBar" pos="25,10" size="93,64" depth="3" atlas="itemiconatlas" sprite="uf1xpbar" color="255,255,255" type="filled" filldirection="radial360" fill="{playerlevelfill}" globalopacitymod="1.5" />
 			<label depth="4" width="50" pos="48,-7" font_size="32" text="{playerlevel}[-]" color="[white]" effect="outline" upper_case="true" justify="center"/>
 		</rect>
 
@@ -172,9 +208,9 @@
 	<window name="SMXLevelXPUF2VALMOD" style="SMXLevelXP.window">
 
 		<rect pos="0,0" controller="PlayerStatsWindow">
-			<sprite name="SMXLevelXPBG" pos="12,15" size="120,80" depth="1" atlas="itemiconatlas" sprite="smxxp1bg" />
-			<sprite name="SMXLevelXPFG" pos="17,13" size="110,76" depth="2" atlas="itemiconatlas" sprite="vmoxpafg" globalopacitymod="1.5" />
-			<sprite name="SMXLevelXPBar" pos="25,10" size="93,64" depth="3" atlas="itemiconatlas" sprite="vmoxpabar" color="255,255,255" type="filled" filldirection="radial360" fill="{playerlevelfill}" globalopacitymod="1.5" />
+			<sprite name="SMXLevelXPBG" pos="12,15" size="120,80" depth="1" atlas="itemiconatlas" sprite="uf2xpbg" />
+			<sprite name="SMXLevelXPFG" pos="17,13" size="110,76" depth="2" atlas="itemiconatlas" sprite="uf2xpfg" globalopacitymod="1.5" />
+			<sprite name="SMXLevelXPBar" pos="25,10" size="93,64" depth="3" atlas="itemiconatlas" sprite="uf2xpbar" color="255,255,255" type="filled" filldirection="radial360" fill="{playerlevelfill}" globalopacitymod="1.5" />
 			<label depth="4" width="50" pos="48,-7" font_size="32" text="{playerlevel}[-]" color="225,221,0" effect="outline" upper_case="true" justify="center"/>
 		</rect>
 
@@ -204,10 +240,10 @@
 
 <!-- >>> TOOLBELTS >>> -->
 	
-	<window name="SMXToolbelt1" width="760" height="226" depth="0" pos="0,85" anchor="CenterBottom" backgroundcolor="[black]" controller="ToolbeltWindow" visible="{toolbeltvisible}" cursor_area="true">
+	<window name="SMXToolbelt1SMX" width="760" height="226" depth="0" pos="0,85" anchor="CenterBottom" backgroundcolor="[black]" controller="ToolbeltWindow" visible="{toolbeltvisible}" cursor_area="true">
 
 		<rect>
-<!--		<texture name="SMXToolbeltBG" depth="0" size="760,120" pos="-380,30" texture="@file:Mods\SMX\Textures\Toolbelt\toolbeltbg.png" material="Materials/Transparent Colored" /> --> <!-- Online Equivalent: http://i63.tinypic.com/29p6g6b.jpg -->
+			<texture name="SMXToolbeltBG" depth="0" size="760,120" pos="-380,30" texture="@file:Mods\SMX\Textures\Toolbelt\toolbeltbg.png" material="Materials/Transparent Colored" />
 
 			<grid name="SMXToolbelt" depth="1" rows="1" cols="8" pos="-340,20" cell_width="85" cell_height="85" controller="Toolbelt" repeat_content="true">
 				<SMX_tb_item_stack_uf1 name="0"/>
@@ -236,7 +272,7 @@
 				<item_stack name="0"/>
 			</grid>
 			<sprite depth="1" pos="0,0">
-				<texture depth="500" name="ToolBeltBackground" width="854" height="145" pos="-125,45" texture="@file:Mods\SMX\Textures\Toolbelt\valtoolbelt.png" material="Materials/Transparent Colored"/> <!--Online Mac: @http://i.imgur.com/XSlbqps.png -->
+				<texture depth="500" name="ToolBeltBackground" width="854" height="145" pos="-125,45" texture="@file:Mods\SMX\Textures\Toolbelt\valtoolbelt.png" material="Materials/Transparent Colored"/>
 			</sprite>
 		</rect>
 	</window>
@@ -286,7 +322,7 @@
 
 	<window name="SMXHudOther">
 
-				<texture name="SMXHudOther" depth="0" size="165,355" pos="-230,-50" texture="@file:Mods\SMX\Textures\Misc\hudotherbg.png" material="Materials/Transparent Colored" justify="right" rotation="90"/> <!-- Online Equivalent: http://i63.tinypic.com/xft537.jpg -->
+				<texture name="SMXHudOther" depth="0" size="165,355" pos="-230,-50" texture="@file:Mods\SMX\Textures\Misc\hudotherbg.png" material="Materials/Transparent Colored" justify="right" rotation="90"/>
 
 		<rect name="SMXCollector" pos="-90,31" side="right" controller="CollectedItemList" pivot="BottomLeft">
 			<panel width="168" height="43" name="item" visible="false" pivot="right" disableautobackground="true" pos="70, 0">
@@ -333,7 +369,7 @@
 
 	<window name="SMXQuestTracker" pos="-255, -88" width="300" height="100" anchor="RightTop" controller="QuestTrackerWindow" visible="{showquest}" depth="-20">
 
-		<texture name="SMXHudOther" depth="0" size="316,58" pos="-140,18" texture="@file:Mods\SMX\Textures\QuestTracker\questsbg.png" material="Materials/Transparent Colored" /> <!-- Online Equivalent: http://i67.tinypic.com/28we34m.jpg -->
+		<texture name="SMXHudOther" depth="0" size="316,58" pos="-140,18" texture="@file:Mods\SMX\Textures\QuestTracker\questsbg.png" material="Materials/Transparent Colored" />
 
 		<label depth="1" text="{questtitle}" font_size="26" effect="outline" justify="center" upper_case="true" pos="-100, -5" height="28" />
 		<sprite pos="-100,-8" depth="1" name="windowIcon" style="icon22px" sprite="{questicon}" justify="left" />
@@ -346,8 +382,6 @@
 	</window>
 
 	<window name="SMXQuestTracker3SIRMOD" pos="-255, -88" width="300" height="100" anchor="RightTop" controller="QuestTrackerWindow" visible="{showquest}" depth="-20">
-
-<!--	<texture name="SMXHudOther" depth="0" size="316,58" pos="-140,18" texture="@file:Mods\SMX\Textures\QuestTracker\questsbg.png" material="Materials/Transparent Colored" /> --> <!-- Online Equivalent: http://i67.tinypic.com/28we34m.jpg -->
 
 		<label depth="1" text="{questtitle}" font_size="26" effect="outline" justify="center" upper_case="true" pos="-100, -5" height="28" />
 		<sprite pos="-100,-8" depth="1" name="windowIcon" style="icon22px" sprite="{questicon}" justify="left" />
@@ -363,7 +397,7 @@
 
 <!-- >>> COMPASS >>> -->
 
-	<window name="SMXCompass1" style="SMXcompass.window" controller="CompassWindow">
+	<window name="SMXCompass1SMX" style="SMXcompass.window" controller="CompassWindow">
 
 		<texture style="SMXcompass.window.background" />
 		<texture style="SMXcompass.window.indicator" />
@@ -502,12 +536,35 @@
 		</panel>
 
 	</window>
+
+	<window name="SMXBuffFrame7SMX2" Controller="ActiveBuffWindow" width="320" height="325" pos="9,550">
+
+		<panel name="content" depth="0" pos="0,-40" disableautobackground="true">
+			<rect height="43">
+				<sprite depth="8" name="backgroundMain" pos="9999,9999" sprite="menu_empty3px" color="[black]" type="sliced" fillcenter="false" />
+				<sprite color="[mediumGrey]" pos="9999,9999" type="sliced" />
+				<panel pos="9999,9999" height="43" disableautobackground="true">
+					<button depth="4" name="pageDown" style="icon30px, press" pos="9999,9999" sprite="ui_game_symbol_arrow_left" pivot="center" sound="[paging_click]" />
+					<rect depth="4" pos="9999,9999">
+						<sprite name="background" pos="9999,9999" style="icon30px" color="[black]" type="sliced" />
+						<label depth="5" name="pageNumber" pos="9999, 9999" width="30" height="28" text="1" font_size="26" justify="center" />
+					</rect>
+					<button depth="4" name="pageUp" style="icon30px, press" pos="9999,9999" sprite="ui_game_symbol_arrow_right" pivot="center" sound="[paging_click]" />
+				</panel>
+			</rect>
+
+			<grid name="buffs" rows="6" cols="1" pos="3,-43" cell_width="168" cell_height="26" repeat_content="true" controller="ActiveBuffList">
+				<SMX_active_buff_entry2 />
+			</grid>
+		</panel>
+
+	</window>
 	
 <!-- <<< BUFFS <<< -->
 
 <!-- >>> DAY & TIME >>> -->
 
-	<window name="SMXDayTimeFrame1" style="SMXDayTimeFrame.window" controller="CompassWindow">
+	<window name="SMXDayTimeFrame1SMX" style="SMXDayTimeFrame.window" controller="CompassWindow">
 
 		<texture style="compass.window.compass.texture" name="compassTexture" rect_size="0.25,1" rect_offset=".8,0">
 
@@ -515,7 +572,7 @@
 
 		<grid name="SMXDayTimeFrame" pos="85,-9" rows="1" cols="2" width="125" cell_width="60" cell_height="46" repeat_content="false">
 			<rect width="400" height="43">
-				<sprite name="SMXDayTimeBG" pos="-20,12" size="214,148" depth="1" atlas="itemiconatlas" sprite="smxuf1extra" globalopacitymod="1.0" />
+				<sprite name="SMXDayTimeBG" pos="-20,12" size="214,148" depth="1" atlas="itemiconatlas" sprite="uf1generalbg" globalopacitymod="1.0" />
 
 				<label depth="2" pos="25,-50" width="60" height="43" text="Day {day|always}" color="[white]" font_size="22" effect="outline" upper_case="true" justify="left" />
 			</rect>
@@ -554,11 +611,11 @@
 	
 <!-- >>> TEMPERATURE >>> -->
 
-	<window name="SMXTempFrameUF1" style="SMXTempFrame.window" controller="PlayerStatsWindow">
+	<window name="SMXTempFrameUF1SMX" style="SMXTempFrame.window" controller="PlayerStatsWindow">
 
 		<grid name="SMXTempFrame" pos="85,-9" rows="1" cols="3" width="360" cell_width="70" cell_height="100" repeat_content="false">
 			<rect width="70" height="100">
-				<sprite name="SMXTempBG" pos="370,-65" size="324,148" depth="1" atlas="itemiconatlas" sprite="smxuf1extra" rotation="180" globalopacitymod="1.5" />
+				<sprite name="SMXTempBG" pos="370,-65" size="324,148" depth="1" atlas="itemiconatlas" sprite="uf1generalbg" rotation="180" globalopacitymod="1.5" />
 
 				<label depth="2" width="100" pos="105,20" font_size="20" text=" {mapelevation}[-]  M" color="[white]" effect="outline" justify="center"  controller="MapStats" />
 			</rect>
@@ -578,7 +635,7 @@
 
 		<grid name="SMXTempFrame" pos="85,-55" rows="1" cols="3" width="360" cell_width="70" cell_height="100" repeat_content="false">
 			<rect width="70" height="100">
-				<sprite name="SMXTempBG" pos="370,-65" size="324,148" depth="1" atlas="itemiconatlas" sprite="smxuf1extra" rotation="180" globalopacitymod="1.5" />
+				<sprite name="SMXTempBG" pos="370,-65" size="324,148" depth="1" atlas="itemiconatlas" sprite="uf2generalbg" rotation="180" globalopacitymod="1.5" />
 
 				<label depth="2" width="100" pos="105,20" font_size="20" text=" {mapelevation}[-]  M" color="[white]" effect="outline" justify="center"  controller="MapStats" />
 			</rect>
@@ -594,13 +651,37 @@
 
 	</window>
 
+	<window name="SMXTempFrameUF3SMX2" style="SMXTempFrame.window" controller="PlayerStatsWindow">
+
+		<grid name="SMXTempFrame" pos="85,-9" rows="3" cols="1" width="150" cell_width="150" cell_height="100" repeat_content="false">
+			<rect width="150" height="100">
+				<sprite name="SMXTempBG" pos="120,170" size="70,65" depth="1" atlas="itemiconatlas" sprite="uf4maptempbg" globalopacitymod="1.5" />
+
+				<label depth="2" width="100" pos="110,134" font_size="18" text=" {maptemperature}[-]" color="[white]" effect="outline" justify="center" controller="MapStats" />
+			</rect>
+
+			<rect width="150" height="100">
+				<sprite name="SMXTempSpike" pos="200,30" size="40,2" depth="1" atlas="itemiconatlas" sprite="uf4tempelevspike" rotation="180" globalopacitymod="1.5" />
+
+				<label depth="2" width="100" pos="85,41" font_size="18" text=" {playercoretemp}[-]" color="[white]" effect="outline" upper_case="true" justify="center" />
+			</rect>
+
+			<rect width="150" height="100">
+				<sprite name="SMXElevationSpike" pos="220,115" size="40,2" depth="1" atlas="itemiconatlas" sprite="uf4tempelevspike" globalopacitymod="1.5" />
+
+				<label depth="2" width="100" pos="230,125" font_size="18" text=" {mapelevation}[-]  M" color="[white]" effect="outline" justify="center"  controller="MapStats" />
+			</rect>
+		</grid>
+
+	</window>
+
 <!-- <<< TEMPERATURE <<< -->	
 
 <!-- >>> INGAME MENU >>> -->
 
 	<window name="SMXingameMenu" anchor="CenterCenter" pos="-125,200" width="250" height="200" controller="InGameMenuWindow" cursor_area="true">
 
-		<texture name="SMX" depth="0" size="250,50" texture="@file:Mods\SMX\Textures\Misc\smxmainmenu.png" material="Materials/Transparent Colored" pos="5,60" /> <!-- Online Equivalent:  -->	
+		<texture name="SMX" depth="0" size="250,50" texture="@file:Mods\SMX\Textures\Misc\smxmainmenu.png" material="Materials/Transparent Colored" pos="5,60" />
 
 		<grid name="buttons" pos="0, -0" cols="1" width="250" cell_width="250" cell_height="56" arrangement="vertical" repeat_content="false" >
 			<simplebutton name="btnOptions" depth="3" width="250" height="46" caption_key="xuiMenuOptions" font_size="40" />
@@ -612,7 +693,7 @@
 	
 <!-- <<< INGAME MENU <<< -->
 
-<!-- <<< SMX v162b7 r01 END - BY SIRILLION >>> -->
+<!-- <<< SMX v163b1e r01 END - BY SIRILLION >>> -->
 
 	<window name="HUDLeftStatBars">
 		<grid name="hud" pos="9,98" rows="2" cols="1" width="168" cell_width="168" cell_height="46" repeat_content="false" side="left" >

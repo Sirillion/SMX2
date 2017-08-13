@@ -1,6 +1,6 @@
 <styles>
 
-<!-- <<< SMX v162b7 r01 START - BY SIRILLION >>> -->
+<!-- <<< SMX v163b1e r01 START - BY SIRILLION >>> -->
 
 	<style name="SMXUnitFrameWindow" type="window">
 		<style_entry name="pos" value="9,20" />
@@ -32,7 +32,7 @@
 
 	<style name="SMXcompass.window.background" type="texture">
 		<style_entry name="depth" value="0" />
-		<style_entry name="texture" value="@file:Mods\SMX\Textures\Compass\compassbg.png" /> <!-- Online Equivalent: http://i64.tinypic.com/jhrct2.jpg -->
+		<style_entry name="texture" value="@file:Mods\SMX\Textures\Compass\compassbg.png" />
 		<style_entry name="type" value="sliced" />
 		<style_entry name="size" value="492,140" />
 		<style_entry name="pos" value="-60,10" />
@@ -68,7 +68,7 @@
 	
 	<style name="SMXcompass.window.indicator" type="texture">
 		<style_entry name="depth" value="9" />
-		<style_entry name="texture" value="@file:Mods\SMX\Textures\Compass\indicator.png" /> <!-- Online Equivalent: http://i65.tinypic.com/11jx6ap.jpg -->
+		<style_entry name="texture" value="@file:Mods\SMX\Textures\Compass\indicator.png" />
 		<style_entry name="type" value="sliced" />
 		<style_entry name="size" value="32,48" />
 		<style_entry name="pos" value="184,10" />
@@ -76,7 +76,7 @@
 
 	<style name="SMXcompass.window.indicator2VALMOD" type="texture">
 		<style_entry name="depth" value="9" />
-		<style_entry name="texture" value="@file:Mods\SMX\Textures\Compass\indicator2VALMOD.png" /> <!-- Online Equivalent: http://i.imgur.com/te7nHcB.png -->
+		<style_entry name="texture" value="@file:Mods\SMX\Textures\Compass\indicator2VALMOD.png" />
 		<style_entry name="type" value="sliced" />
 		<style_entry name="size" value="32,48" />
 		<style_entry name="pos" value="184,10" />
@@ -90,7 +90,7 @@
 		<style_entry name="color" value="[iconColor]" />
 		<style_entry name="tooltip" value="CHARACTER" />
 		<style_entry name="texture" value="Textures/UI/ui_game_compass" />
-<!--	<style_entry name="texture" value="@file:Mods\SMX\Textures\Compass\compass.png" /> --><!-- Online Equivalent: --> <!-- WARNING! Do NOT enable. Causes major memory leak! -->
+<!--	<style_entry name="texture" value="@file:Mods\SMX\Textures\Compass\compass.png" /> --> <!-- WARNING! Do NOT enable. Causes major memory leak! -->
 	</style>
 
 	<style name="SMXDayTimeFrame.window" type="window">
@@ -124,7 +124,7 @@
 		<style_entry name="foregroundlayer" value="true" />
 	</style>
 	
-<!-- <<< SMX v162b7 r01 END - BY SIRILLION >>> -->
+<!-- <<< SMX v163b1e r01 END - BY SIRILLION >>> -->
 
 	<global>
 		<!-- 	
