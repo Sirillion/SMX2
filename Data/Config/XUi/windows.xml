@@ -681,9 +681,9 @@
 
 	<window name="SMXingameMenu" anchor="CenterCenter" pos="-125,200" width="250" height="200" controller="InGameMenuWindow" cursor_area="true">
 
-		<texture name="SMX" depth="0" size="250,50" texture="@file:Mods\SMX\Textures\Misc\smxmainmenu.png" material="Materials/Transparent Colored" pos="5,60" />
+		<texture name="SMX" depth="0" size="788,788" texture="@file:Mods\SMX\Textures\Misc\smxmainmenu2.png" material="Materials/Transparent Colored" pos="-268,290" />
 
-		<grid name="buttons" pos="0, -0" cols="1" width="250" cell_width="250" cell_height="56" arrangement="vertical" repeat_content="false" >
+		<grid name="buttons" pos="0, -100" cols="1" width="250" cell_width="250" cell_height="56" arrangement="vertical" repeat_content="false" >
 			<simplebutton name="btnOptions" depth="3" width="250" height="46" caption_key="xuiMenuOptions" font_size="40" />
 			<simplebutton name="btnSave" depth="3" width="250" height="46" caption_key="xuiMenuSave" font_size="40" />
 			<simplebutton name="btnExit" depth="3" width="250" height="46" caption_key="xuiMenuExit" font_size="40" />
